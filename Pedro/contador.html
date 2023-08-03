@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="final">
+
+    <input type="number" id="variacao">
+    
+
+    <button onclick="contador()">ver</button>
+
+    <script>
+        function contador(){
+            let final = document.getElementById("final").value
+            let variacao = document.getElementById("variacao").value
+            let contador = 0
+            while (contador <= Number(final)){
+                console.log(contador)
+                contador = contador + Number(variacao)
+            }
+        }
+    </script>
+</body>
+</html>
